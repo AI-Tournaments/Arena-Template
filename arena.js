@@ -1,6 +1,4 @@
 'use strict'
-importScripts('https://ai-tournaments.github.io/AI-Tournaments/Arena/Participants.js');
-importScripts('https://chrisacrobat.github.io/js-compilation/CreateWorkerFromRemoteURL.js');
 function postDone(participants, log){
 	postMessage({type: 'Done', message: {score: participants.getScores(), settings: participants.getSettings(), log: log}});
 }
@@ -9,7 +7,8 @@ function postAbort(participant='', error=''){
 	postMessage({type: 'Aborted', message: {participantName: participantName, error: error}})
 }
 onmessage = messageEvent => {
-	new Participants(messageEvent.data, ()=>{
+	importScripts(messageEvent.data.ArenaHelper_url);
+	new ArenaHelper.Participants(messageEvent.data, ()=>{
 		onmessage = messageEvent => {
 			if(messageEvent.data === 'Start'){
 				/* Ready. Set. Go! */;
