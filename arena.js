@@ -1,4 +1,7 @@
 'use strict'
+function tick(){
+	/* Ready. Set. Go! */
+}
 function postDone(participants, log){
 	postMessage({type: 'Done', message: {score: participants.getScores(), settings: participants.getSettings(), log: log}});
 }
@@ -11,7 +14,7 @@ onmessage = messageEvent => {
 	new ArenaHelper.Participants(messageEvent.data, ()=>{
 		onmessage = messageEvent => {
 			if(messageEvent.data === 'Start'){
-				/* Ready. Set. Go! */;
+				tick();
 			}
 		}
 		postMessage({type: 'Ready-To-Start', message: null});
