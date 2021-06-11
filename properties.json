@@ -1,5 +1,10 @@
 {
 	"header": {
+		"customInput": {
+			"schema": null,
+			"schemaRefs": null,
+			"default": null
+		},
 		"limits": {
 			"participants": {"min": 2, "max": 2},
 			"teams": {"min": 2, "max": 2},
