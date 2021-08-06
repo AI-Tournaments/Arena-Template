@@ -4,16 +4,16 @@
 - [ ] Write a description.
 - [ ] Write the rules.
 - [ ] Write how message timeout is handled.
-- [ ] What are the disqualifiers.
-...
+- [ ] Write what are the disqualifiers and what will happen.
+- [ ] **Do not abort game due to due to invalid response from participant.** It can be missued to prevent logging losses.
 
 ## Rules
 ...
 ### Message timeout
 Caught exceeding the time limit (`timelimit_ms`) for participant execution lead to
-- DNF (Did-Not-Finish)?
-- No movement / skipped turn?
+- DNF (Did-Not-Finish)
+- No movement, skipped turn or continue with last input.
 
 ### Disqualifications
-Violating any of this will lead to DNF (Did-Not-Finish), aborted game and disqualification from the running tournament.
+Violating any of this will either lead to DNF (Did-Not-Finish).
 ...
