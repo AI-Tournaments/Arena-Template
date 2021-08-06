@@ -5,6 +5,7 @@
 - [ ] Write the rules.
 - [ ] Write how message timeout is handled.
 - [ ] Write what are the disqualifiers and what will happen.
+
 **NOTES:**
 - Do not abort game due to due to invalid response from participant, it can be missued to prevent logging losses.
 - If you get `STATUS_BREAKPOINT` in Chromium, it's possible that you have an infinite recursive function somewhere.
