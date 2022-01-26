@@ -2,7 +2,7 @@
 	"header": {
 		"customInput": {
 			"schema": null,
-			"schemaRefs": null,
+			"schemaDefs": null,
 			"default": null
 		},
 		"limits": {
