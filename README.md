@@ -12,10 +12,13 @@
 
 ## Rules
 ...
+
 ### Message timeout
-Caught exceeding the time limit (`timelimit_ms`) for participant execution lead to
+Caught exceeding the execution limit (`executionSteps`) will lead to
+<br>(_Suggestions_)
 - DNF (Did-Not-Finish)
 - No movement, skipped turn or continue with last input.
+- ...
 
 ### Disqualifications
 Violating any of this will either lead to DNF (Did-Not-Finish).
