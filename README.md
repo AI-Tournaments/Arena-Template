@@ -5,6 +5,7 @@
 - [ ] Write the rules.
 - [ ] Write how message timeout is handled.
 - [ ] Write what are the disqualifiers and what will happen.
+- [ ] Make a release.<br>Releases are for updating the version which is loaded. Updating README.md does not requier a new release.
 
 **NOTES:**
 - Do not abort game due to due to invalid response from participant, it can be missued to prevent logging losses.
