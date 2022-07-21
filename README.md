@@ -8,7 +8,7 @@
 - [ ] Make a release.<br>Releases are for updating the version which is loaded. Updating README.md does not requier a new release.
 
 **NOTES:**
-- Do not abort game due to due to invalid response from participant, it can be missued to prevent logging losses.
+- Do not abort game due to due to invalid response from participant, it can be misused to prevent logging losses.
 - If you get `STATUS_BREAKPOINT` in Chromium, it's possible that you have an infinite recursive function somewhere.
 
 ## Rules
