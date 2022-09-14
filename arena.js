@@ -2,6 +2,7 @@
 let _participants;
 let _settings;
 function messageParticipants(){
+	ArenaHelper.log('tick', {/* Arena state */});
 	let promises = [];
 	_participants.forEach(participant => {
 		let pendingResponse = participant.postMessage({/* TODO: Send participant input. */}).then(response => {
@@ -20,14 +21,12 @@ function updateArena(){
 		}
 	});
 	// TODO: Update arena.
-	ArenaHelper.log('tick', {/* Arena state */});
-	// TODO: Call `ArenaHelper.postDone()` when arena is finished, otherwise call `messageParticipants()` again.
+	// TODO: Call `ArenaHelper.postDone()` when match is finished, otherwise call `messageParticipants()` again.
 }
 ArenaHelper.init = (participants, settings) => {
 	_participants = participants;
 	_settings = settings;
 	ArenaHelper.postAbort('Did-Not-Start', 'Invalid settings.'); // Example
 	// TODO: Build arena.
-	ArenaHelper.log('tick', {/* Arena state */});
 	messageParticipants();
 }
